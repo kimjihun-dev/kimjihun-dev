@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web puslisher kim ji hun portfolio site.">
+    <meta name="keywords" content="HTML5, CSS3, javascript, jQuery, web publisher, web designer, bootstrap, web responsive, django, vue, react, flutter, bootstrap">
+    <meta name="author" content="Jihun Kim">
+    <meta name="robots" content="index">
+    <title>김지훈 포트폴리오</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!-- intro -->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-area">
+                    <h1>WEB PUBLISHER</h1>
+                    <p class="ml11">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">웹퍼블리셔 김지훈 포트폴리오 사이트입니다</span>
+                        </span>
+                    </p>
+                    <a href="#pT"><button>PORTFOLIO</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header class="header navbar navbar-default" id="header">
+            <div class="container">
+                <h1><a href="#">logo</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="index.html#header">Home</a></li>
+                        <li><a href="#project-list">Portfolio</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mBtn">
+                    <a href="#!" onclick="openNav()"><img src="images/mMenuBtn.png" alt="모바일버튼"></a>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html#header">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#pT">Portfolio</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- page title -->
+        <section class="p-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 id="pT" class="text-uppercase">portfolio</h4>
+                        <p>포트폴리오용으로 제작된 개인 작업물입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title -->
+
+        <!-- portfolio list -->
+        <section class="portfolio-list">
+            <div class="container">
+                <div class="row">
+                    <!-- filters -->
+                    <div class="col-md-12 filterBox">
+                        <div class="text-center">
+                            <ul class="portfolio-filter">
+                                <li class="active" data-filter="*"><a href="#!">ALL</a></li>
+                                <li data-filter=".web"><a href="#!">Web</a></li>
+                                <li data-filter=".mob"><a href="#!">Moblie</a></li>
+                                <li data-filter=".vue"><a href="#!">Vuejs</a></li>
+                                <li data-filter=".rails"><a href="#!">Rails</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="project-list" class="row projects">
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="tong-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item01.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>동명대학교 리뉴얼</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item mob">
+                        <a href="code-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item02.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>코디노트 퍼블리싱</h3>
+                                        <small>Mobile</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="assm-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item03.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>국회사이트 리뉴얼</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="museum-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item04.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>복천박물관 리뉴얼</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="yeonje.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item05.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>연제일신병원 리뉴얼</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="pale-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item06.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>팔레드시즈 리뉴얼</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item web">
+                        <a href="aohana-detail.html">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/item07.jpg" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>플로리스트 홍보사이트</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item rails">
+                        <a href="#!">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/test01.png" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>project name</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-6 item rails">
+                        <a href="#!">
+                            <div class="portfolio-thumb">
+                                <!-- 460x410 -->
+                                <img src="images/test01.png" class="img-responsive" alt="Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-item">
+                                        <h3>project name</h3>
+                                        <small>Web</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>                    
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- end portfolio list -->
+
+        <!-- about -->
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div id="about" class="about-title">
+                            <h2>about</h2>
+                            <p>웹표준에 맞춰 의미있는 구조와 간결함을 가지는 코딩,<br> 
+                                다양한 환경에 반응하도록 좋은 디자인의 웹사이트를 만들기 위해 노력하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-contents">
+                    <div class="col-md-4 text-center cir-item">
+                        <img src="images/desktop.png" alt="반응형웹">
+                        <h3>RESPONSIVE</h3>
+                        <h5>PC / Tablet / Mobile</h5>
+                        <p>디바이스에 맞춘 반응형웹 작업</p>
+                    </div>
+                    <div class="col-md-4 text-center cir-item">
+                        <img src="images/jsIcon.png" alt="인터렉티브">
+                        <h3>INTERACTIVE</h3>
+                        <h5>javascript, jQuery</h5>
+                        <p>인터렉티브 웹작업</p>
+                    </div>
+                    <div class="col-md-4 text-center cir-item">
+                        <img src="images/uix.png" alt="ui_ux">
+                        <h3>RESPONSIVE</h3>
+                        <h5>Modern / Simple</h5>
+                        <p>사용자의 편리성을 생각한 디자인</p>
+                    </div>
+                </div>
+                <div class="row about-cv">
+                    <div class="col-lg-12 text-center">
+                        <a href="#!" title="이력서 다운로드">
+                            <button class="cvBtn">Download CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+
+        <!-- contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div id="contact" class="contact-title">
+                            <h2>contact</h2>
+                        </div>
+                        <div class="contact-content">
+                            <p><i class="fas fa-phone-alt"></i>+82 10 2697 4836</p>
+                            <p><i class="fas fa-envelope"></i>zodlab@kakao.com</p>
+                            <p>
+                                <a href="https://github.com/kimjihun-dev" target="_blank"><img src="images/github.png" alt="github" title="깃허브 바로가기"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center footer-title">
+                        <h2>&copy;&nbsp;zodlab 2020<br>웹퍼블리셔 김지훈</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- go Top -->
+        <div class="top">
+            <a href="#"><img src="images/top-icon.png" alt="탑버튼"></a>
+        </div>
+        <!-- end top -->
+
+    </div>
+    <script src="https://kit.fontawesome.com/d4c9c062e8.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
