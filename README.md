@@ -4,6 +4,8 @@
 
 </div>
 
+https://kimjihun-dev.github.io/kimjihun-dev/
+
 ### Hi there 👋
 
 <!--
