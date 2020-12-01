@@ -4,7 +4,7 @@
 
 </div>
 
-portfolio-site : https://kimjihun-portfolio.netlify.app/
+portfolio-site : https://kimjihun.netlify.app/
 
 ### Hi there 👋
 
